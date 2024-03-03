@@ -35,6 +35,7 @@
 .custom-btn {
   @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
 }
+
 /* END: General styles */
 
 /* START: Hero styles */
@@ -61,6 +62,7 @@
 .hero__image-overlay {
   @apply absolute xl:-top-24 xl:-right-1/2 -right-1/4 bg-hero-bg bg-repeat-round -z-10 w-full xl:h-screen h-[590px] overflow-hidden;
 }
+
 /* END: Hero styles */
 
 /* START: Home styles */
@@ -84,6 +86,7 @@
 .home__error-container {
   @apply mt-16 flex justify-center items-center flex-col gap-2;
 }
+
 /* END: Home styles */
 
 /* START: Car Card styles */
@@ -130,6 +133,7 @@
 .car-card__btn-container {
   @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
 }
+
 /* END: Car Card styles */
 
 /* START: Car Details styles */
@@ -144,6 +148,7 @@
 .car-details__main-image {
   @apply relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg;
 }
+
 /* END: Car Details styles */
 
 /* START: Custom Filter styles */
@@ -154,11 +159,12 @@
 .custom-filter__options {
   @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
 }
+
 /* END: Custom Filter styles */
 
 /* START: Footer styles */
 .footer {
-  @apply flex flex-col text-black-100  mt-5 border-t border-gray-100;
+  @apply flex flex-col text-black-100 mt-5 border-t border-gray-100;
 }
 
 .footer__links-container {
@@ -184,6 +190,7 @@
 .footer__copyrights-link {
   @apply flex-1 flex sm:justify-end justify-center max-sm:mt-4 gap-10;
 }
+
 /* END: Footer styles */
 
 /* START: searchbar styles */
@@ -198,6 +205,7 @@
 .searchbar__input {
   @apply w-full h-[48px] pl-12 p-4 bg-light-white rounded-r-full max-sm:rounded-full outline-none cursor-pointer text-sm;
 }
+
 /* END: searchbar styles */
 
 /* START: search manufacturer styles */
@@ -214,6 +222,7 @@
 }
 
 .search-manufacturer__option {
-  @apply cursor-default select-none py-2 pl-10 pr-4;
+  @apply cursor-default select-none py-2 pl-10 pr-4 hover:cursor-pointer;
 }
+
 /* END: search manufacturer styles */
