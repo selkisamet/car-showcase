@@ -2,8 +2,14 @@ import { fetchCars } from "@/utils";
 import { Hero, SearchBar, CustomFilter, CarCard } from "./components";
 
 
-export default async function Home() {
-  const allCars = await fetchCars()
+export default async function Home({ searchParams }) {
+  const allCars = await fetchCars({
+    manufacturer: searchParams.manufacturer,
+    model: searchParams.model || 2022,
+    year: searchParams.year || "",
+    fuel: searchParams.fuel || "",
+    limit: searchParams.limit || 10
+  });
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
   return (
@@ -45,3 +51,10 @@ export default async function Home() {
     </main>
   );
 }
+
+
+// Boy: 146
+// En: 148
+
+// Boy: 142.5
+// En: 122.5
