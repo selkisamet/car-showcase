@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { SearchManufacturer } from "./";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
