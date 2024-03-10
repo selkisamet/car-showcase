@@ -7,10 +7,10 @@ export default async function Home({ searchParams }) {
 
   const allCars = await fetchCars({
     manufacturer: searchParams.manufacturer || "",
-    model: searchParams.model || 2022,
-    year: searchParams.year || "",
+    year: searchParams.year || 2022,
     fuel: searchParams.fuel || "",
-    limit: searchParams.limit || 10
+    limit: searchParams.limit || 10,
+    model: searchParams.model || "",
   });
   const isDataEmpty = !Array.isArray(allCars) || allCars.length < 1 || !allCars;
 
@@ -42,7 +42,7 @@ export default async function Home({ searchParams }) {
                 }
               </div>
 
-              <ShowMore pageNumber={(searchParams.limit || 50) / 10} isNext={(searchParams.limit || 10) > allCars.length} />
+              <ShowMore pageNumber={(searchParams.limit || 10) / 10} isNext={(searchParams.limit || 10) > allCars.length} />
             </section>
           ) : (
             <div className="home__error-container">
